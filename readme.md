@@ -1,6 +1,6 @@
-# Flask To-Do List Web Application
+# Flask Web Application
 
-This is a simple web application built using Flask, a lightweight Python web framework, designed to help users manage their to-do lists efficiently. Users can add, update, delete, and mark tasks as completed through a user-friendly web interface.
+This is a simple web application built using Flask, a lightweight Python web framework, designed to help users manage their to-do lists. Users can add, update, delete, and mark tasks as completed through a user-friendly web interface.
 
 ## Features
 
