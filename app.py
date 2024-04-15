@@ -4,11 +4,10 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
 app.config["SQLALCHEMY_TRACK_MODIFICATION"] = False
-db = SQLAlchemy(app)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@postgres_db:5432/Faiq'
 
+db = SQLAlchemy(app)
 
 class Todo(db.Model):
     """A Model for an Item in the Todo List"""
@@ -21,11 +20,12 @@ class Todo(db.Model):
     def __repr__(self):
         return f'<Task {self.id}>'
 
-with app.app_context():
-    db.create_all()
+
 
 @app.route('/', methods=["POST","GET"])
 def index():
+    with app.app_context():
+        db.create_all()
     if request.method == "POST":
         task_content = request.form['content']
         new_task = Todo(content=task_content)
@@ -66,5 +66,4 @@ def update(id):
         return render_template("update.html", task=task)
 
 if __name__ == "__main__":
-  
-    app.run(debug=True)
+    app.run( host='0.0.0.0', debug=False)

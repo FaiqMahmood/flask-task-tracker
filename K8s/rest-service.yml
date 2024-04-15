@@ -1,0 +1,14 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rest-server-service
+  namespace: task
+spec:
+  selector:
+    app: rest-server
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+  type: NodePort # Use LoadBalancer if you are deploying on cloud providers like GKE, EKS, or AKS
