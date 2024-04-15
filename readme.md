@@ -1,36 +1,40 @@
-# Flask Web Application
+# Flask Task Tracker
 
-This is a simple web application built using Flask, a lightweight Python web framework, designed to help users manage their to-do lists. Users can add, update, delete, and mark tasks as completed through a user-friendly web interface.
+Flask Task Tracker is a lightweight web application designed to streamline task management. With features for adding, updating, deleting, and marking tasks as completed, it offers a user-friendly interface built on Flask, SQLAlchemy, and Docker technologies.
 
-## Features
+![alt text](images/image.png)
 
-- **Add Tasks**: Easily add new tasks to your to-do list.
-- **Update Tasks**: Modify task descriptions as needed.
-- **Delete Tasks**: Remove tasks from the list when they're no longer needed.
-- **Mark Tasks as Completed**: Keep track of completed tasks by marking them as done.
-- **Responsive Design**: The application interface adapts to different screen sizes, making it accessible on various devices.
+## Table of Contents
+
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Running as a Container](#running-as-a-container)
+- [Deployment in Kubernetes](#deployment-in-kubernetes)
 
 ## Technologies Used
 
-- **Flask**: The web framework used to build the application.
-- **SQLAlchemy**: An ORM tool for interacting with the SQLite database.
-- **SQLite**: A lightweight relational database management system used to store task data.
-- **HTML/CSS**: Used for front-end design and layout.
-- **Jinja2**: A template engine for rendering HTML templates with dynamic content.
-- **Python**: The primary programming language used for backend development.
+- **Flask**: Web framework for building the application.
+- **SQLAlchemy**: ORM tool for database interaction with SQLite.
+- **SQLite**: Lightweight relational database management system for storing task data.
+- **HTML/CSS**: Front-end design and layout.
+- **Jinja2**: Template engine for rendering dynamic HTML content.
+- **Python**: Primary programming language for backend development.
+- **Docker**: Containerization for easy deployment.
+- **Docker-Compose**: Orchestration of containers.
+- **Kubernetes**: Orchestration of containers for scalable deployment.
 
 ## Installation
 
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/flask-todo-list.git
+   git clone https://github.com/FaiqMahmood/flask-task-tracker.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd flask-todo-list
+   cd flask-task-tracker
    ```
 
 3. Install the required dependencies using pip:
@@ -45,11 +49,46 @@ This is a simple web application built using Flask, a lightweight Python web fra
    python app.py
    ```
 
-5. Open your web browser and go to `http://localhost:5000` to access the application.
+5. Access the application by opening your web browser and going to `http://localhost:5000`.
 
-## Usage
+## Running as a Container
 
-- **Adding a Task**: Enter the task description in the input field and press "Add Task".
-- **Updating a Task**: Click on the task you want to update, make changes in the input field, and press "Update".
-- **Deleting a Task**: Click on the "Delete" button next to the task you want to remove.
-- **Marking a Task as Completed**: Click on the checkbox next to the task to mark it as completed.
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/FaiqMahmood/flask-task-tracker.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd flask-task-tracker
+   ```
+
+3. Execute the docker-compose file:
+
+   ```bash
+   docker compose up
+   ```
+
+## Deployment in Kubernetes
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/FaiqMahmood/flask-task-tracker.git
+   ```
+
+2. Build and push the Docker images to a container registry.
+
+3. Navigate to the Kubernetes manifests directory:
+
+   ```bash
+   cd flask-task-tracker/manifests
+   ```
+
+4. Apply the Kubernetes manifests to deploy the application:
+
+   ```bash
+   kubectl apply -f .
+   ```
