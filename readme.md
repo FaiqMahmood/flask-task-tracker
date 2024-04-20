@@ -1,6 +1,6 @@
 # Flask Task Tracker
 
-Flask Task Tracker is a lightweight web application to-do application with options for adding, updating, deleting, and marking tasks as completed. The front-end is built using the Flask framework, Postgres is used to the data, SQLAlchemy (ORM), Docker for containerizing the app and Kubernetes for container orchestration.
+Flask Task Tracker is a lightweight task tracking web application with options for adding, updating, deleting, and marking tasks as completed. The front-end is built using the Flask framework, Postgres is used to the data, SQLAlchemy (ORM), Docker for containerizing the app and Kubernetes for container orchestration.
 
 ## App Preview
 
