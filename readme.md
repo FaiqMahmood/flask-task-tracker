@@ -2,7 +2,7 @@
 
 Flask Task Tracker is a lightweight task tracking web application with options for adding, updating, deleting, and marking tasks as completed. The front-end is built using the Flask framework, Postgres is used to the data, SQLAlchemy (ORM), Docker for containerizing the app and Kubernetes for container orchestration.
 
-## App Preview
+## Application Preview
 
 ![alt text](images/image.png)
 
@@ -29,7 +29,7 @@ Flask Task Tracker is a lightweight task tracking web application with options f
 
 1. Clone the repository to your local machine:
 
-   ```bash
+   ```yml
 
    git clone https://github.com/FaiqMahmood/flask-task-tracker.git
 
@@ -45,7 +45,7 @@ Flask Task Tracker is a lightweight task tracking web application with options f
 
 3. Install the required dependencies using pip:
 
-   ```bash
+   ```yml
 
    pip install -r requirements.txt
 
@@ -53,7 +53,7 @@ Flask Task Tracker is a lightweight task tracking web application with options f
 
 4. Run the Flask application:
 
-   ```bash
+   ```yml
 
    python app.py
 
@@ -65,7 +65,7 @@ Flask Task Tracker is a lightweight task tracking web application with options f
 
 1. Clone the repository to your local machine:
 
-   ```bash
+   ```yml
 
    git clone https://github.com/FaiqMahmood/flask-task-tracker.git
 
@@ -91,7 +91,7 @@ Flask Task Tracker is a lightweight task tracking web application with options f
 
 1. Clone the repository to your local machine:
 
-   ```bash
+   ```yml
 
    git clone https://github.com/FaiqMahmood/flask-task-tracker.git
 
@@ -101,7 +101,7 @@ Flask Task Tracker is a lightweight task tracking web application with options f
 
 3. Navigate to the Kubernetes manifests directory:
 
-   ```sh
+   ```bash
 
    cd flask-task-tracker/manifests
 
