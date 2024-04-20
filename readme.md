@@ -28,47 +28,61 @@ Flask Task Tracker is a lightweight web application designed to streamline task 
 1. Clone the repository to your local machine:
 
    ```bash
+
    git clone https://github.com/FaiqMahmood/flask-task-tracker.git
+
    ```
 
 2. Navigate to the project directory:
 
    ```bash
+
    cd flask-task-tracker
+
    ```
 
 3. Install the required dependencies using pip:
 
    ```bash
+
    pip install -r requirements.txt
+
    ```
 
 4. Run the Flask application:
 
    ```bash
+
    python app.py
+
    ```
 
-5. Access the application by opening your web browser and going to `http://localhost:5000`.
+5. Access the application by opening your web browser and going to `http://localhost:5000`
 
 ## Running as a Container
 
 1. Clone the repository to your local machine:
 
    ```bash
+
    git clone https://github.com/FaiqMahmood/flask-task-tracker.git
+
    ```
 
 2. Navigate to the project directory:
 
    ```bash
+
    cd flask-task-tracker
+
    ```
 
 3. Execute the docker-compose file:
 
-   ```bash
+   ```yml
+
    docker compose up
+
    ```
 
 ## Deployment in Kubernetes
@@ -76,19 +90,25 @@ Flask Task Tracker is a lightweight web application designed to streamline task 
 1. Clone the repository to your local machine:
 
    ```bash
+
    git clone https://github.com/FaiqMahmood/flask-task-tracker.git
+
    ```
 
 2. Build and push the Docker images to a container registry.
 
 3. Navigate to the Kubernetes manifests directory:
 
-   ```bash
+   ```sh
+
    cd flask-task-tracker/manifests
+
    ```
 
 4. Apply the Kubernetes manifests to deploy the application:
 
-   ```bash
+   ```yml
+
    kubectl apply -f .
+
    ```
